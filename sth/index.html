@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+<!-- Component components/gtag_events -->
+
+
+
+<!-- Component components/gtag -->
+<!-- supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+    window.ccPorted = {};
+    const SUPABASE_URL = 'https://dahljrdecyiwfjgklnvz.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRhaGxqcmRlY3lpd2ZqZ2tsbnZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjgyNjE3NzMsImV4cCI6MjA0MzgzNzc3M30.8-YlXqSXsYoPTaDlHMpTdqLxfvm89-8zk2HG2MCABRI';
+    window.ccSupaClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+</script>
+
+<!-- large.js -->
+<script src="/assets/scripts/helpers.js?i=2"></script>
+<script src="/assets/scripts/large.js?i=2"></script>
+<script src = "/assets/scripts/stateHandler.js"></script>
+
+
+<!-- external (gtag) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJDL65P9Y4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DJDL65P9Y4');
+</script>
+<!-- End component components/gtag -->
+
+
+<script src="/assets/scripts/stateHandler.js?v=001"></script>
+<script src="/gtag_events.js?v=002" data-gameid="stickman_hook"></script>
+<!-- End component components/gtag_events -->
+
+  
+  <meta charset="utf-8" />
+  <title>Stickman Hook | Unblocked on CCPorted</title>
+  <meta name="description" content="Stickman Hook is a fun game that tests your speed and reflexes. Swing your stickman to the finish line by hooking on the ceiling and avoiding the obstacles." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+  <style>
+    html,
+    body {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+    }
+
+    canvas {
+      width: 100%;
+    }
+  </style>
+
+  <!-- Poki SDK -->
+  <script src="poki3.js"></script>
+</head>
+
+<body>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>

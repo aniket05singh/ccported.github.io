@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<!-- Component components/gtag_events -->
+
+
+
+<!-- Component components/gtag -->
+<!-- supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+    window.ccPorted = {};
+    const SUPABASE_URL = 'https://dahljrdecyiwfjgklnvz.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRhaGxqcmRlY3lpd2ZqZ2tsbnZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjgyNjE3NzMsImV4cCI6MjA0MzgzNzc3M30.8-YlXqSXsYoPTaDlHMpTdqLxfvm89-8zk2HG2MCABRI';
+    window.ccSupaClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+</script>
+
+<!-- large.js -->
+<script src="/assets/scripts/helpers.js?i=2"></script>
+<script src="/assets/scripts/large.js?i=2"></script>
+<script src = "/assets/scripts/stateHandler.js"></script>
+
+
+<!-- external (gtag) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJDL65P9Y4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DJDL65P9Y4');
+</script>
+<!-- End component components/gtag -->
+
+
+<script src="/assets/scripts/stateHandler.js?v=001"></script>
+<script src="/gtag_events.js?v=002" data-gameid="learn_to_fly_1"></script>
+<!-- End component components/gtag_events -->
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel='stylesheet' href='/flash/styles.css' />
+    <title>Learn To Fly | Unblocked on CCPorted</title>
+    <meta name="description" content="Play Learn to Fly unblocked - Launch your determined penguin to new heights through strategic equipment upgrades and perfect timing. Experience this classic Flash game free on CCPorted with no restrictions.">
+</head>
+
+<body>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <div id="container">
+        <div id="subContainer">
+            <div id="gameContainer"></div>
+            <div id="fullScreenBar">
+                <h3 id="gameFName"></h3>
+                <div id="fullscreen"><img src="/assets/images/fullscreen.png"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/flash/em.js" data-swf-file-src="/flash/swf/learn_to_fly.swf" data-fName="Learn To Fly">
+    </script>
+</body>
+
+</html>

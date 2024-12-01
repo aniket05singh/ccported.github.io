@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<!-- Component components/gtag_events -->
+
+
+
+<!-- Component components/gtag -->
+<!-- supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+    window.ccPorted = {};
+    const SUPABASE_URL = 'https://dahljrdecyiwfjgklnvz.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRhaGxqcmRlY3lpd2ZqZ2tsbnZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjgyNjE3NzMsImV4cCI6MjA0MzgzNzc3M30.8-YlXqSXsYoPTaDlHMpTdqLxfvm89-8zk2HG2MCABRI';
+    window.ccSupaClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+</script>
+
+<!-- large.js -->
+<script src="/assets/scripts/helpers.js?i=2"></script>
+<script src="/assets/scripts/large.js?i=2"></script>
+<script src = "/assets/scripts/stateHandler.js"></script>
+
+
+<!-- external (gtag) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJDL65P9Y4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DJDL65P9Y4');
+</script>
+<!-- End component components/gtag -->
+
+
+<script src="/assets/scripts/stateHandler.js?v=001"></script>
+<script src="/gtag_events.js?v=002" data-gameid="tetris"></script>
+<!-- End component components/gtag_events -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Tetris | Unblocked on CCPorted</title>
+    <meta name = "description" content = "The original Tetris game, free and available to play online.">
+    <link rel = "stylesheet" type = "text/css" href = "tetris.css">
+    <script src = "/assets/scripts/leaderboard.js"></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-info">
+            <div class="next-piece">
+                <h2>Next</h2>
+                <canvas id="nextPieceCanvas"></canvas>
+            </div>
+            <div class="score-board">
+                <h2>Score</h2>
+                <div id="score">0</div>
+            </div>
+            <div class="controls">
+                <h2>Controls</h2>
+                <p>← → : Move</p>
+                <p>↓ : Soft Drop</p>
+                <p>Space : Hard Drop</p>
+                <p>↑ : Rotate</p>
+            </div>
+        </div>
+    </div>
+
+    <script src = "tetris.js"></script>
+</body>
+
+</html>
