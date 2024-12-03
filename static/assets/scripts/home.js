@@ -565,6 +565,7 @@ try {
             document.getElementById("sendGameRequestButton").click();
         }
     });
+    
     addGameRequestButton.addEventListener("click", () => {
         if (window.gameRQPopupOpen) return;
         const popup = createAddGamePopup();
@@ -590,7 +591,8 @@ try {
     
         closeButton.addEventListener("click", closePopup);
 
-    })
+    }
+    )
     sortButton.addEventListener("click", () => {
         searchInput.value = "";
         input();
